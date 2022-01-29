@@ -2,9 +2,9 @@
 
 source "https://rubygems.org"
 
-# Specify your gem's dependencies in oke_palindrome.gemspec
+git_source(:github) {|oke_palindrome| "https://github.com/#{oke_palindrome}" }
+
+# Specify your gem's dependencies in <username>_palindrome.gemspec
 gemspec
 
-gem "rake", "~> 13.0"
-
-gem "minitest", "~> 5.0"
+gem 'minitest-reporters', '1.2.0'
